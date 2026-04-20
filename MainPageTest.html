@@ -1,0 +1,767 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>迪卡侬官网复刻</title>
+    <link rel="stylesheet" href="MainPage.css">
+    <link rel="stylesheet" href="MemberBenefits.css">
+</head>
+<body>
+<!-- 1. 顶部导航栏 + 搜索栏 -->
+<div class="nav-top">
+    <div class="logo"><img src="a_logo.png"></div>
+    <div class="nav-links">
+        <a href="#" onclick="switchPage('main')">主页</a>
+        <a href="#" onclick="switchPage('benefits')">会员权益</a>
+    </div>
+    <div class="nav-right">
+        <div class="search-box">
+            <input type="text" class="search-input" placeholder="输入搜索内容">
+            <button class="search-btn">搜索</button>
+            <div class="search-result">搜索结果显示区域</div>
+        </div>
+        <div class="user-menu">
+            <div class="menu-item">登录</div>
+            <div class="menu-item">购物车</div>
+            <div class="menu-item">会员</div>
+        </div>
+    </div>
+</div>
+
+
+    <div id="mainPage" class="main-page">
+        <div class="content">
+
+
+        <!-- 2. 三张轮播图区域 -->
+        <section class="banner-brand">
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="slide slide1">
+                        <img src="lunbo11.jpg" alt="Banner 1">
+                    </div>
+                    <div class="slide slide2">
+                        <img src="lunbo12.jpg" alt="Banner 2">
+                    </div>
+                    <div class="slide slide3">
+                        <img src="lunbo13.jpg" alt="Banner 3">
+                    </div>
+                    <div class="slide slide4">
+                        <img src="lunbo14.jpg" alt="Banner 4">
+                    </div>
+                    <div class="slide slide5">
+                        <img src="lunbo15.jpg" alt="Banner 5">
+                    </div>
+                    <div class="slide slide6">
+                        <img src="lunbo16.jpg" alt="Banner 6">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. 核心运动品类区 -->
+        <div style="margin-top: 150px; margin-left: 100px">
+            <h2 class="cat-title">乐享运动</h2>
+            <div class="cat-grid">
+                <div class="grid-item"><img src="part20_1.png" alt=""> <p>跑步</p></div>
+                <div class="grid-item"><img src="part20_2.png" alt=""> <p>登山/徒步穿越</p></div>
+                <div class="grid-item"><img src="part20_3.png" alt=""> <p>健身</p></div>
+                <div class="grid-item"><img src="part20_4.png" alt=""> <p>自行车</p></div>
+                <div class="grid-item"><img src="part20_5.png" alt=""> <p>越野跑</p></div>
+                <div class="grid-item"><img src="part20_6.png" alt=""> <p>飞盘</p></div>
+                <div class="grid-item"><img src="part20_7.png" alt=""> <p>游泳</p></div>
+                <div class="grid-item"><img src="part20_8.png" alt=""> <p>儿童自行车</p></div>
+                <div class="grid-item"><img src="part20_9.png" alt=""> <p>健康与运动附件</p></div>
+                <div class="grid-item"><img src="part20_10.png" alt=""> <p>基础健身/普拉提</p></div>
+                <div class="grid-item"><img src="part20_11.png" alt=""> <p>羽毛球</p></div>
+                <div class="grid-item"><img src="part20_1.png" alt=""> <p>查看所有运动</p></div>
+            </div>
+        </div>
+        <!-- 1. 关于迪卡侬 (截图1) -->
+        <section class="section about-decathlon">
+            <div class="container">
+                <div class="section-title">关于迪卡侬</div>
+                <div class="about-content">
+                        <div class="about-item">
+                            <img src="part31.png" alt="">
+                        </div>
+                        <div class="about-item">
+                            <img src="part32.png" alt="">
+                        </div>
+                        <div class="about-item">
+                            <img src="part33.png" alt="">
+                        </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. 当季品类 (截图2 & 3) -->
+        <section class="section seasonal-category">
+<!--            <div class="container">-->
+                <div class="section-header">
+                    <h2 class="section-title">当季品类</h2>
+                    <div class="tabs">
+                        <span class="active">速干衣</span>
+                        <span>背包</span>
+                        <span>羽毛球</span>
+                        <span>跑步鞋</span>
+                    </div>
+                </div>
+                <div class="main-banner">
+                    <img src="part41.jpg" alt="">
+                    <div class="banner-text">
+                        <h3>1111111</h3>
+                        <p>查看更多</p>
+                    </div>
+                </div>
+                <div class="product-list">
+                    <!-- 这里的图片请替换为实际产品图 -->
+                    <div class="product-card">
+                        <img src="part41_1.jpg" alt="">
+                        <p>DOMYOS 男士训练无缝透气T恤</p>
+                        <span class="price">¥99.90</span>
+                    </div>
+                    <div class="product-card">
+                        <img src="part41_2.jpg" alt="">
+                        <p>DOMYOS 男士凉爽宽松训练T恤</p>
+                        <span class="price">¥129.90</span>
+                    </div>
+                    <div class="product-card">
+                        <img src="part41_3.jpg" alt="">
+                        <p>DOMYOS 男士训练透气T恤</p>
+                        <span class="price">¥99.90</span>
+                    </div>
+                    <div class="product-card">
+                        <img src="part41_4.jpg" alt="">
+                        <p>DOMYOS 男士训练柔软短袖T恤</p>
+                        <span class="price">¥99.90</span>
+                    </div>
+                    <div class="product-card">
+                        <img src="part41_4.jpg" alt="">
+                        <p>DOMYOS 男士训练柔软短袖T恤</p>
+                        <span class="price">¥99.90</span>
+                    </div>
+                </div>
+        </section>
+
+        <!-- 3. 依说搭配  -->
+        <section class="section outfit-section">
+
+            <div class="container">
+                <div style="font-size: 40px">侬说搭配</div>
+                <!-- 隐藏的单选按钮 -->
+                <input type="radio" name="tab" id="tab1" checked>
+                <input type="radio" name="tab" id="tab2">
+                <input type="radio" name="tab" id="tab3">
+
+                <!-- 标签控制 (左上角) -->
+
+                <div class="tabs-control">
+                    <label for="tab1" class="tab">推荐</label>
+                    <label for="tab2" class="tab">羽毛球</label>
+                    <label for="tab3" class="tab">溯溪</label>
+                </div>
+
+                <!-- 轮播内容 -->
+                <div class="carousel-container">
+                    <!-- 第一个页面 -->
+                    <div class="outfit-page page-1">
+                        <div class="outfit-content">
+                            <div class="outfit-bg-image">
+                                <img src="part51.jpg" alt="推荐搭配背景">
+                            </div>
+                        </div>
+                        <!-- 产品区域移到内容区域下方 -->
+                        <div class="outfit-products">
+                            <div class="product-card">
+                                <img src="part51_1.jpg" alt="越野跑鞋">
+                                <p>KIPRUN 男士越野跑鞋</p>
+                                <span class="price">¥899.90</span>
+                            </div>
+                            <div class="product-card">
+                                <img src="part51_2.jpg" alt="速干T恤">
+                                <p>KIPRUN 男士跑步速干T恤</p>
+                                <span class="price">¥199.90</span>
+                            </div>
+                            <div class="product-card">
+                                <img src="part51_3.jpg" alt="跑步短裤">
+                                <p>KIPRUN 男士跑步短裤</p>
+                                <span class="price">¥129.90</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 第二个页面 -->
+                    <div class="outfit-page page-2">
+                        <div class="outfit-content">
+                            <div class="outfit-bg-image">
+                                <img src="part52.jpg" alt="羽毛球搭配背景">
+                            </div>
+                        </div>
+                        <div class="outfit-products">
+                            <div class="product-card">
+                                <img src="part52_1.jpg" alt="羽毛球鞋">
+                                <p>KIPRUN 男士羽毛球鞋</p>
+                                <span class="price">¥799.90</span>
+                            </div>
+                            <div class="product-card">
+                                <img src="part52_2.jpg" alt="羽毛球T恤">
+                                <p>KIPRUN 男士羽毛球T恤</p>
+                                <span class="price">¥179.90</span>
+                            </div>
+                            <div class="product-card">
+                                <img src="part52_3.jpg" alt="羽毛球短裤">
+                                <p>KIPRUN 男士羽毛球短裤</p>
+                                <span class="price">¥139.90</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 第三个页面 -->
+                    <div class="outfit-page page-3">
+                        <div class="outfit-content">
+                            <div class="outfit-bg-image">
+                                <img src="part53.jpg" alt="溯溪搭配背景">
+                            </div>
+                        </div>
+                        <div class="outfit-products">
+                            <div class="product-card">
+                                <img src="part53_1.jpg" alt="溯溪鞋">
+                                <p>KIPRUN 男士溯溪鞋</p>
+                                <span class="price">¥849.90</span>
+                            </div>
+                            <div class="product-card">
+                                <img src="part53_2.jpg" alt="溯溪T恤">
+                                <p>KIPRUN 男士溯溪T恤</p>
+                                <span class="price">¥189.90</span>
+                            </div>
+                            <div class="product-card">
+                                <img src="part53_3.jpg" alt="溯溪裤">
+                                <p>KIPRUN 男士溯溪裤</p>
+                                <span class="price">¥229.90</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. 依粉热搜 (截图4) -->
+        <section class="section hot-search">
+                <p style="margin-bottom: 0; margin-left:5%">侬粉热搜</p> <!--此处由于css用了通用样式，姑且先用style改一改-->
+                <div class="tags">
+                    <span>儿童自行车</span>
+                    <span>simond 冲锋衣</span>
+                    <span>骑行服</span>
+                    <span>泳镜</span>
+                    <span>背包</span>
+                    <span>生日</span>
+                </div>
+        </section>
+        <!--折扣专区（手搓）-->
+        <section class="section-account">
+            <div class="account-down">
+                <div class="acc-subtitle">折扣专区</div>
+                <div style="overflow: hidden"><img src="part70.jpg"></div>
+            </div>
+        </section>
+
+        <!-- 5. 迪家创新 (截图4 & 5) -->
+        <section class="innovation-section">
+            <h2 class="section-title">迪家创新</h2>
+
+            <div class="slider-viewport">
+                <!-- 按钮 -->
+                <button class="btn prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="btn next" onclick="moveSlide(1)">&#10095;</button>
+
+                <!-- 滑动轨道 -->
+                <div class="slider-track" id="track">
+                    <!-- 卡片 1 -->
+                    <div class="card">
+                            <img src="part61.jpg" alt="跑鞋">
+                    </div>
+                    <!-- 卡片 2 -->
+                    <div class="card">
+                            <img src="part62.jpg" alt="羽毛球">
+                    </div>
+                    <!-- 卡片 3 -->
+                    <div class="card">
+                            <img src="part63.jpg" alt="皮划艇">
+                    </div>
+
+                    <!-- 【关键点】这里复制了 卡片 1 放到最后，用于无缝衔接 -->
+                    <!-- 在JS中我们会自动克隆，或者你也可以手动写在这里 -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. 服务保障 -->
+        <section class="section services">
+            <div class="container">
+                <div class="service-item">
+                    <i class="icon-truck"></i>
+                    <img src="tips_2.e4167ff.png">
+                </div>
+                <div class="service-item">
+                    <i class="icon-bag"></i>
+                    <img src="tips_1.a663193.png">
+                </div>
+                <div class="service-item">
+                    <i class="icon-coin"></i>
+                    <img src="tips_3.a8978d4.png">
+                </div>
+                <div class="service-item">
+                    <i class="icon-tools"></i>
+                    <img src="tips_4(2).png" style="transform: scale(1.3); margin-top: 20px">
+                </div>
+                <div class="service-item">
+                    <i class="icon-refresh"></i>
+                    <img src="tips_5.3df68e3.png">
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. 热卖推荐 (截图5 & 6) -->
+        <section class="section best-sellers">
+            <div class="container">
+                <h2 class="section-title">热卖推荐</h2>
+                <div class="product-grid">
+                    <!-- 重复产品卡片以模拟截图中的多行布局 -->
+                    <div class="product-card"><img src="part80_1.jpg" alt=""><p>DECATHLON 男士跑步透气快干T恤</p><span>¥39.90</span></div>
+                    <div class="product-card"><img src="part80_2.jpg" alt=""><p>FORCLAZ 男士徒步长裤</p><span>¥179.90</span></div>
+                    <div class="product-card"><img src="part80_3.jpg" alt=""><p>DECATHLON 男士标准剪裁透气健身长袖</p><span>¥79.90</span></div>
+                    <div class="product-card"><img src="part80_4.jpg" alt=""><p>DOMYOS 男士基础训练短裤</p><span>¥99.90</span></div>
+                    <div class="product-card"><img src="part80_5.jpg" alt=""><p>KALENJI 男士跑步轻薄防风夹克</p><span>¥29.90</span></div>
+                    <div class="product-card"><img src="part80_6.jpg" alt=""><p>KALENJI 男士跑步轻薄防风夹克</p><span>¥29.90</span></div>
+                    <div class="product-card"><img src="part80_7.jpg" alt=""><p>KALENJI 男士跑步轻薄防风夹克</p><span>¥29.90</span></div>
+                    <div class="product-card"><img src="part80_8.jpg" alt=""><p>KALENJI 男士跑步轻薄防风夹克</p><span>¥29.90</span></div>
+                    <div class="product-card"><img src="part80_9.jpg" alt=""><p>KALENJI 男士跑步轻薄防风夹克</p><span>¥29.90</span></div>
+                    <div class="product-card"><img src="part80_10.jpg" alt=""><p>KALENJI 男士跑步轻薄防风夹克</p><span>¥29.90</span></div>
+                </div>
+                <button class="load-more">+ 展开更多</button>
+            </div>
+        </section>
+
+        <!-- 底部 -->
+        <footer class="footer">
+            <div class="container">
+                <p>产品信息及通知</p>
+                <!-- 底部链接等 -->
+            </div>
+        </footer>
+
+        <!-- 10. 底部版权 -->
+        <div class="laydown">
+            <div class="more">
+                <div><img src="img.png" alt="迪卡侬logo"></div>
+                <div class="more-all">
+                    <div class="more-text">
+                        <div class="_text">
+                            <p>关于迪卡侬</p>
+                            <p>关于我们</p>
+                            <p>门店查询</p>
+                            <p>招聘信息</p>
+                            <p>投资者关系</p>
+                            <p>可持续发展</p>
+                        </div>
+                        <div class="_text">
+                            <p>帮助中心</p>
+                            <p>订单跟踪</p>
+                            <p>退换货政策</p>
+                            <p>常见问题</p>
+                            <p>联系我们</p>
+                        </div>
+                        <div class="_text">
+                            <p>加入我们</p>
+                            <p>会员俱乐部</p>
+                            <p>运动社群</p>
+                            <p>活动报名</p>
+                        </div>
+                        <div class="_text">
+                            <p>服务时间</p>
+                            <p>周一至周日</p>
+                            <p>8:00-22:00</p>
+                            <p>客服热线</p>
+                            <p>400-xxx-xxxx</p>
+                        </div>
+                    </div>
+
+                    <div class="more-link">
+                        <div class="qr-code">
+                            <img src="qr-code.png" alt="二维码">
+                        </div>
+                        <div class="qr-text">扫码加入迪卡侬<br>会员俱乐部</div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2024 迪卡侬（中国）有限公司 版权所有 | 沪ICP备xxxxxx号 | 沪公网安备 xxxxxxxxxxxx号</p>
+            </div>
+        </div>
+</div>
+    </div>
+
+    <div id="benefitsPage" class="benefits-page">
+        <div class="total">
+        <div class="member_benefit">
+
+            <!--            -->
+            <div class="header">
+                <div class="introduce">
+                    <p class="header_font_1">玩转迪卡侬会员
+                        <br>尝试你的更多运动可能</p>
+                    <p>加入迪卡侬会员俱乐部，解锁会员独家礼遇！在迪卡侬会员俱乐部，我们希望能够和会员一起享受自己喜欢的运动。
+                        <br>与迪卡侬互动，赚取燃值，享受服务，参与专享活动，助你离快乐更进一步。</p>
+                    <div class="join_in">
+                        <div class="new_member">新会员超多权益</div>
+                        <div class="join">加入<br>我们</div>
+                    </div>
+                </div>
+                <img src="header.png" alt="">
+            </div>
+
+            <!--     第二部分       -->
+            <div class="second_con">
+                <div class="text">
+                    <img src="part1_1.png" alt="会员燃值福利">
+                    <div class="text-content">
+                        <h2>会员燃值福利</h2>
+                        <p>独家礼品/电子礼券/幸运大奖/限量活动等应有尽有</p>
+                    </div>
+                    <div class="qr-overlay">
+                        <div class="qr-code">
+                            <img src="qr-code.png" alt="二维码">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text">
+                    <img src="part1_2.png" alt="会员服务">
+                    <div class="text-content">
+                        <h2>会员服务</h2>
+                        <p>超一流的售后保障和专业的装备维保升级服务</p>
+                    </div>
+                    <div>
+                        <button class="button1">立即加入</button>
+                        <button class="button2">迪卡侬会员须知</button>
+                    </div>
+                    <div class="qr-overlay">
+                        <button class="workshop-btn">工作室</button>
+                    </div>
+                </div>
+
+                <div class="text">
+                    <img src="part1_3.png" alt="社群福利">
+                    <div class="text-content">
+                        <h2>社群福利</h2>
+                        <p>专业运动知识/运动同好/社群活动，等你加入</p>
+                    </div>
+                    <div class="qr-overlay">
+                        <div class="qr-code">
+                            <img src="qr-code.png" alt="二维码">
+                        </div>
+                    </div>
+                </div>
+                <p class="second_warp p-2">燃值专区</p>
+                <div class="second_warp area-1">
+                    <code>
+                        <img class="default-img" src="present.png" alt="">
+                        <img class="hover-img" src="erweima2.png" alt="">
+                        <span class="span1">燃值兑礼</span>
+                        <span>选择你的燃值好物</span>
+                    </code>
+                    <code>
+                        <img class="default-img" src="stamp.png" alt="">
+                        <img class="hover-img" src="erweima2.png" alt="">
+                        <span class="span1">燃值兑券</span>
+                        <span>总有礼券是你想要</span>
+                    </code>
+                    <code>
+                        <img class="default-img" src="cup.png" alt="">
+                        <img class="hover-img" src="erweima2.png" alt="">
+                        <span class="span1">幸运抽奖</span>
+                        <span>幸运一下，今日大奖得主就是你</span>
+                    </code>
+                    <code>
+                        <img class="default-img" src="tool.png" alt="">
+                        <img class="hover-img" src="erweima2.png" alt="">
+                        <span class="span1">装备维保</span>
+                        <span>心爱装备极致守护</span>
+                    </code>
+                    <code>
+                        <img class="default-img" src="erercise.png" alt="">
+                        <img class="hover-img" src="erweima2.png" alt="">
+                        <span class="span1">运动趣练</span>
+                        <span>体验运动无限可能</span>
+                    </code>
+                </div>
+            </div>
+            <div class="line-1">
+                <div class="line-1-1"></div>
+                <span style="font-size: 30px; color: darkgray">更多会员权益不断升级！</span>
+                <div class="line-1-1"></div>
+            </div>
+
+            <div class="strategy">
+                <p style="height: 75px; font-size: 50px">燃值攻略</p>
+                <p style="height: 45px; font-size: 30px; text-align: center; margin: 10px">探索更多燃值新玩法，迪卡侬燃值助力运动</p>
+                <div class="claim">
+                    <div><img src="footer.png"></div>
+                    <div>
+                        <p style="text-align: left">关于迪卡侬会员燃值</p>
+                        <div style="margin-top: 20px">
+                            <span>1</span>
+                            <div class="rest">
+                                <p class="p1">燃值是什么？</p>
+                                <p class="p2">
+                                    燃值是迪卡侬会员俱乐部为在迪卡侬消费，
+                                    互动的会员准备的会员权益，与每个会员的账号相关连，燃值很有用，
+                                    要保护好自己的账号噢！
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <span>2</span>
+                            <div class="rest">
+                                <p class="p1">如何使用燃值?</p>
+                                <p class="p2">
+                                    燃值可用于在中国大陆地区兑换产品/电子礼券/
+                                    指定服务/指定活动抽奖机会，
+                                    直接前往微信小程序-”迪卡侬会员小程序“ 使用你的燃值吧！
+
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <span>3</span>
+                            <div class="rest">
+                                <p class="p1">燃值有效期</p>
+                                <p class="p2">
+                                    当年获得的燃值将在次年年底过期
+                                    (例如2023年获得的燃值将在2024年12月31日24:00过期)
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <span>4</span>
+                            <div class="rest">
+                                <p class="p1">怎么获得燃值</p>
+                                <p class="p2">
+                                    会员积极和迪卡侬互动，在迪卡侬消费，
+                                    评价自己的订单都能获得燃值噢，还有更多隐藏攻略，等你来探索！
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <span>5</span>
+                            <div class="rest">
+                                <p class="p1">关注迪卡侬获得更多信息</p>
+                                <p class="p2">搜索微信公众号”Decathlon迪卡侬
+                                    “并关注，搜索微信小程序”迪卡侬会员俱乐部
+                                    “发现更多燃值相关活动，快来参与吧！
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="laydown">
+            <div class="more">
+                <div><img src="img.png" alt="迪卡侬logo"></div>
+                <div class="more-all">
+                    <div class="more-text">
+                        <div class="_text">
+                            <p>关于迪卡侬</p>
+                            <p>关于我们</p>
+                            <p>门店查询</p>
+                            <p>招聘信息</p>
+                            <p>投资者关系</p>
+                            <p>可持续发展</p>
+                        </div>
+                        <div class="_text">
+                            <p>帮助中心</p>
+                            <p>订单跟踪</p>
+                            <p>退换货政策</p>
+                            <p>常见问题</p>
+                            <p>联系我们</p>
+                        </div>
+                        <div class="_text">
+                            <p>加入我们</p>
+                            <p>会员俱乐部</p>
+                            <p>运动社群</p>
+                            <p>活动报名</p>
+                        </div>
+                        <div class="_text">
+                            <p>服务时间</p>
+                            <p>周一至周日</p>
+                            <p>8:00-22:00</p>
+                            <p>客服热线</p>
+                            <p>400-xxx-xxxx</p>
+                        </div>
+                    </div>
+
+                    <div class="more-link">
+                        <div class="qr-code">
+                            <img src="qr-code.png" alt="二维码">
+                        </div>
+                        <div class="qr-text">扫码加入迪卡侬<br>会员俱乐部</div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2024 迪卡侬（中国）有限公司 版权所有 | 沪ICP备xxxxxx号 | 沪公网安备 xxxxxxxxxxxx号</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+<!--==================================================================-->
+<script>
+    // 1. 获取元素
+    const track = document.getElementById('track');
+    const cards = document.querySelectorAll('.card');
+    const totalRealCards = cards.length; // 真实的卡片数量 (3)
+    let currentIndex = 0;
+    let isAnimating = false;
+
+    // 2. 克隆第一张卡片并追加到末尾 (实现无缝循环的关键)
+    // 页面加载时，JS会自动把第一张卡片复制一份放到最后
+    const firstCardClone = cards[0].cloneNode(true);
+    track.appendChild(firstCardClone);
+
+    // 3. 定义移动函数
+    function moveSlide(direction) {
+        if (isAnimating) return; // 防止快速点击
+        isAnimating = true;
+
+        // 计算目标索引
+        // 每次移动一张卡片的距离 (因为我们要实现 1-2 -> 2-3 的效果)
+        // 视口宽度的一半就是一张卡片的宽度
+        const cardWidth = track.clientWidth / 2;
+
+        if (direction === 1) {
+            // 向右滑 (下一组)
+            currentIndex++;
+            // 移动到下一张
+            track.style.transform = `translateX(-${currentIndex * (cardWidth)}px)`;
+
+            // 检查是否滑到了克隆的那张卡片 (即第4张，索引为3)
+            if (currentIndex === totalRealCards) {
+                // 等待动画结束 (500ms) 后，瞬间跳回真实的第一张
+                setTimeout(() => {
+                    isAnimating = true; // 锁定
+                    track.style.transition = 'none'; // 关闭动画
+                    currentIndex = 0; // 索引归零
+                    track.style.transform = `translateX(0px)`; // 瞬间复位
+
+                    // 强制重绘，确保浏览器反应过来状态变了
+                    track.offsetHeight;
+
+                    // 恢复动画能力，供下次使用
+                    setTimeout(() => {
+                        track.style.transition = 'transform 0.5s ease-in-out';
+                        isAnimating = false;
+                    }, 50);
+                }, 500); // 这里的500ms必须和CSS里的transition时间一致
+            } else {
+                // 普通滑动，动画结束后解锁
+                setTimeout(() => { isAnimating = false; }, 500);
+            }
+
+        } else {
+            // 向左滑 (上一组)
+            if (currentIndex === 0) {
+                // 如果当前在第一张，要瞬间跳到克隆的那张(最后一张)，然后再滑回来
+                currentIndex = totalRealCards;
+                track.style.transition = 'none';
+                track.style.transform = `translateX(-${currentIndex * (cardWidth)}px)`;
+
+                // 强制重绘
+                track.offsetHeight;
+
+                // 恢复动画
+                track.style.transition = 'transform 0.5s ease-in-out';
+                currentIndex--; // 准备往回滑
+            } else {
+                currentIndex--;
+            }
+
+            // 执行滑动
+            setTimeout(() => {
+                track.style.transform = `translateX(-${currentIndex * (cardWidth)}px)`;
+                setTimeout(() => { isAnimating = false; }, 500);
+            }, 50);
+        }
+    }
+
+    // 4. 自动轮播
+    let autoPlay = setInterval(() => {
+        moveSlide(1);
+    }, 3000); // 3秒切换一次
+
+    // 鼠标悬停时暂停自动播放
+    const viewport = document.querySelector('.slider-viewport');
+    viewport.addEventListener('mouseenter', () => clearInterval(autoPlay));
+    viewport.addEventListener('mouseleave', () => {
+        autoPlay = setInterval(() => {
+            moveSlide(1);
+        }, 3000);
+    });
+
+    // 5. 处理窗口大小变化 (保持响应式)
+    window.addEventListener('resize', () => {
+        // 如果窗口大小变了，我们需要强制重置位置，防止错位
+        // 只有在显示真实第一张时才重置，避免干扰逻辑
+        if(currentIndex === 0) {
+            track.style.transform = 'translateX(0)';
+        }
+    });
+//=================================================================================================
+    // 使用display:none实现页面跳转
+    // 页面切换函数
+    // ✅ 正确的页面切换函数（不操作导航栏按钮）
+    function switchPage(page) {
+        const mainPage = document.getElementById('mainPage');
+        const benefitsPage = document.getElementById('benefitsPage');
+
+        if (page === 'main') {
+            mainPage.style.display = 'block';
+            benefitsPage.style.display = 'none';
+        } else if (page === 'benefits') {
+            mainPage.style.display = 'none';
+            benefitsPage.style.display = 'block';
+        }
+
+        // ✅ 关键：不要操作导航栏按钮的显示状态
+        // 导航栏应该始终保持可见
+    }
+
+    // ✅ 确保DOM加载完成后初始化
+    document.addEventListener('DOMContentLoaded', function() {
+        // ✅ 为导航链接添加点击事件
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetPage = this.textContent.trim();
+                if (targetPage === '主页') {
+                    switchPage('main');
+                } else if (targetPage === '会员权益') {
+                    switchPage('benefits');
+                }
+            });
+        });
+
+        // ✅ 初始状态
+        document.getElementById('mainPage').style.display = 'block';
+        document.getElementById('benefitsPage').style.display = 'none';
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,605 @@
+*{
+    font-family: "Roboto", sans-serif;
+}
+
+
+.logo {
+    font-size: 24px;
+    font-weight: 900;
+    color: #0066B2;
+    letter-spacing: -1px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.nav-links {
+    display: flex;
+    gap: 40px;
+    margin-left: 100px; /* 导航栏左侧 */
+    margin-right: 100px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.nav-links a:hover {
+    color: #3355e2;
+    text-decoration: underline solid rgba(51, 85, 226, 0.1);
+}
+
+/* 页面显示控制 - 使用display:none模拟页面跳转 */
+.main-page {
+    margin-top: 120px;
+    display: block; /* 初始显示主页 */
+}
+
+.benefits-page {
+    margin-top: 120px;
+    display: none; /* 初始隐藏会员权益页 */
+}
+
+.search-box {
+    width: 400px;
+    height: 40px;
+    border: 1px solid #ccc;
+    display: flex;
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    padding: 0 10px;
+    outline: none;
+}
+
+.search-btn {
+    width: 80px;
+    background: #f5f5f5;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    font-weight: bold;
+}
+.search-result {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: none;
+    z-index: 10;
+}
+
+.user-menu {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+    color: #333;
+}
+.total{
+    width: 3517px;
+    max-width: 1700px;
+    height: 3640px;
+    /*border: black 1px;*/
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+}
+.member_benefit{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    /*max-width: 1800px;*/
+    height: auto;
+}
+.member_benefit img {
+    width: 100%;
+    height: auto;
+}
+
+/*div{*/
+/*    border: black solid 2px;*/
+/*}*/
+
+.header {
+    position: relative;
+}
+.introduce{
+    position: absolute;
+    height: 60%;
+    width: 1020px;
+    top:20%;
+    left:5%;
+}
+.join_in {
+    display: flex;
+    height: 100px;
+    width: 330px;
+    background-color: #fff;
+    border: #2f53e8 solid 3px;
+}
+.new_member{
+    display: flex;
+    flex:1;
+    font-size: 27px;
+    justify-content: center;
+    align-items: center;
+}
+.join {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    height: 100px;
+    width: 100px;
+    background-color: #2f53e8;
+}
+
+
+.header_font_1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+.header_font_2 {
+
+}
+.second_con{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+.text{
+    display: flex;
+    width: 515px;
+    height: 750px;
+    flex-wrap: wrap;
+    position: relative;
+}
+.text img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;/*由于text有明确宽高，需要修改默认fill*/
+    object-position: top;
+}
+.text div{
+    position: absolute;/*已text为参考系移动buttom子标签*/
+    width: 550px;
+    height:70px;
+    left: 50%;
+    margin-left: -275px;
+    top:70%;
+    display: flex;
+    justify-content: space-between;
+}
+.text button{
+    height: 100%;
+    width: 42%;
+}
+.button1{
+    background-color: #3355e2;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 2px;
+}
+.button1:hover{
+    background-color: #1b3daf;
+}
+.button2 {
+    color: #3355e2;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* 新增：文本内容样式 - 初始在图片上方 */
+.text-content {
+    position: absolute;
+
+    left: 0;
+    width: 100%;
+    padding: 0 30px;
+    color: white;
+    text-align: center;
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+    z-index: 2;
+    pointer-events: none; /* 防止文字干扰悬停 */
+}
+
+.text-content h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.text-content p {
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+/* 二维码覆盖层样式 */
+.qr-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 3;
+    pointer-events: none;
+}
+
+/* 悬停效果关键样式 */
+.text:hover .text-content {
+    transform: translateY(-80px); /* 只移动文字 */
+}
+
+.text:hover .qr-overlay {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto; /* 悬停后允许点击 */
+}
+
+/* 二维码样式 */
+.qr-code {
+    width: 180px;
+    height: 180px;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.qr-code img {
+    width: 160px;
+    height: 160px;
+    object-fit: contain;
+}
+
+/* 工作室按钮样式 */
+.workshop-btn {
+    background: white;
+    color: #3355e2;
+    border: 2px solid #3355e2;
+    padding: 12px 35px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.workshop-btn:hover {
+    background: #3355e2;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* 保持原有其他样式不变 */
+.second_warp{
+    width: 100%;
+}
+.p-2{
+    height: 75px;
+    text-align: center;
+    font-size: 60px;
+}
+.area-1{
+    display: flex;
+    height: 390px;
+    justify-content: space-around;
+    margin-bottom: 170px;
+}
+
+
+.second_warp{/*用于单个标签换行*/
+    width: 100%;
+}
+.p-2{
+    height: 75px;
+    text-align: center;
+    font-size: 60px;
+}
+.area-1{/*燃值专区五个*/
+    display: flex;
+    height: 390px;
+    justify-content: space-around;
+    margin-bottom: 170px;
+}
+
+div code{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    position: relative;
+}
+code:hover{
+    transform: translateY(40px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+.area-1 code img{
+    width: 30%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom:20px;
+}
+
+.default-img{
+    opacity: 1;
+}
+code:hover .default-img{
+    opacity: 0;
+}
+.hover-img{
+    position: absolute;
+    top:8%;
+    width: 180px !important;/*被父容器影响了，强行提高优先级*/
+    object-fit: contain;
+    opacity: 0;
+}
+code:hover .hover-img{
+    opacity: 1;
+}
+.span1{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 30%;
+    height: 20px;
+    width: 100%;
+    /*border: black solid 1px;*/
+}
+.area-1 code span{
+    margin-top: 20%;
+    text-align: center;
+    height: 20px;
+    width: 100%;
+    /*border: black solid 1px;*/
+}
+.line-1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.line-1-1{
+    height: 2.75px;
+    width: 625px;
+    background-color: black;
+}
+.strategy{/*倒数第二个大标签*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+}
+.strategy p{
+    text-align: center;
+}
+.claim{
+    margin-top: 100px;
+    height: 645px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.claim div{
+    width: 750px;
+    height:645px;
+    display: flex;
+    flex-direction: column;
+}
+.claim img{
+    height:auto
+}
+.claim div div{
+    display: flex;
+    flex-direction: row;
+    height: 97.5px;
+    margin-top: 20px;
+}
+.claim span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    width:67.5px;
+    height: 72.5px;
+}
+.claim p{
+    font-size: 25px;
+    margin: 0;
+    color:#616161;
+}
+.claim .p1 {
+    margin: 0;
+    font-size: 24px;
+    color: #000000;
+}
+
+.claim .p2{
+    font-size: 18px;
+    text-align: start;
+}
+.claim .rest {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+}
+/*=============================== 底部 ==================================*/
+.laydown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3643BA;
+    width: 100%;
+    height: 395px;
+    margin-top: 200px;
+    position: relative;
+}
+
+.laydown .more {
+    background-color: #3643BA;
+    width: 1800px;
+    height: 395px;
+    align-items: center;
+    padding: 0 100px;
+}
+
+.more > div:first-child {
+    width: 200px;
+    height: 40px;
+}
+
+.more img {
+    margin-left: 100px;
+    height: 40px;
+    object-fit: contain;
+    display: block;
+}
+
+.more .more-all {
+    display: flex;
+    width: 1600px;
+    height: 88%;
+    margin-left: 100px;
+}
+
+.more .more-text {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+._text {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+._text:first-child p:first-child,
+._text:nth-child(2) p:first-child,
+._text:nth-child(3) p:first-child,
+._text:last-child p:first-child {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 25px;
+}
+
+._text p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 15px;
+    line-height: 1.5;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+._text p:hover {
+    color: white;
+}
+
+.more .more-link {
+    width: 188px;
+    height: 185px;
+    position: relative;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+}
+
+.more .more-link .qr-code {
+    width: 120px;
+    height: 120px;
+    background: white;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+.more .more-link .qr-code img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.more .more-link .qr-text {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.more .more-link .qr-code::after {
+    content: '';
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+    background: #ff4d4d;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.laydown .copyright {
+    width: 100%;
+    height: 60px;
+    background-color: #3643BA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.laydown .copyright p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.5;
+}

@@ -1,0 +1,65 @@
+/* 隐藏 radio，样式同前 */
+.tabs-container input[type="radio"] { display: none; }
+
+.tab-bar { display: flex; gap: 20px; margin-bottom: 20px; }
+.tab-label { cursor: pointer; padding: 5px 0; text-decoration: none; transition: 0.2s; }
+.tab-label:hover { text-decoration: underline; }
+
+/* 手动点击时的下划线（优先级高于动画） */
+#tab1:checked ~ .tab-bar .tab-label[for="tab1"],
+#tab2:checked ~ .tab-bar .tab-label[for="tab2"],
+#tab3:checked ~ .tab-bar .tab-label[for="tab3"] {
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+.pages-container { position: relative; min-height: 200px; overflow: hidden; }
+.page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s;
+    pointer-events: none; /* 让隐藏的页面不干扰点击 */
+}
+
+/* 默认显示第一个页面（用于初始状态） */
+
+
+/* 自动轮播动画（关键） */
+@keyframes autoPlay {
+    0%, 30% { opacity: 1; pointer-events: auto; }   /* 显示当前页 */
+    33%, 100% { opacity: 0; pointer-events: none; } /* 隐藏 */
+}
+
+/* 给三个页面分配动画，错开时间 */
+.tabs-container:not(:has(input:checked)) .page1 { animation: autoPlay 9s infinite; }
+.tabs-container:not(:has(input:checked)) .page2 { animation: autoPlay 9s infinite; animation-delay: 3s} /* 延迟3秒 */
+.tabs-container:not(:has(input:checked)) .page3 { animation: autoPlay 9s infinite; animation-delay: 6s} /* 延迟6秒 */
+
+/* 手动点击时，暂停自动轮播，并强制显示对应页面 */
+#tab1:checked ~ .pages-container .page1,
+#tab2:checked ~ .pages-container .page2,
+#tab3:checked ~ .pages-container .page3 {
+    opacity: 1;
+    pointer-events: auto;
+    animation: none; /* 停止自动动画，转为手动控制 */
+}
+
+/* 当手动点击后，其他页面必须隐藏 */
+#tab1:checked ~ .pages-container .page2,
+#tab1:checked ~ .pages-container .page3,
+#tab2:checked ~ .pages-container .page1,
+#tab2:checked ~ .pages-container .page3,
+#tab3:checked ~ .pages-container .page1,
+#tab3:checked ~ .pages-container .page2 {
+    opacity: 0;
+    pointer-events: none;
+    animation: none;
+}
+/* 初始状态显示第一页 */
+.tabs-container:not(:has(input:checked)) .page1 {
+    opacity: 1;
+    pointer-events: auto;
+}
